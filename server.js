@@ -25,21 +25,21 @@ var tableReservations = [{
     name: "Giovanna",
     phone: "(407) 800-4897",
     email: "giovanna.perina@hotmail.com",
-    resID: "1"
+    party: "1"
   },
   {
     customerName: "Joshua",
     name: "Joshua",
     phoneNumber: "(302) 382-5155",
     Email: "jharnois444@gmail.com",
-    resID: "2"
+    party: "2"
   },
   {
     customerName: "Reinaldo",
     name:  "Reinaldo",
     phone: "(407) 577-7607",
     email: "llanoreinaldo@gmail.com",
-    resID: "3"
+    party: "3"
   }
 ];
 

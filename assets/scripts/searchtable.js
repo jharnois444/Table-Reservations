@@ -13,7 +13,7 @@
                 $("#name").text(data.name);
                 $("#phone").text(data.phone);
                 $("#email").text(data.email);
-                $("#reservationID").text(data.resID);
+                $("#party").text(data.party);
             } else {
                 $("#name").text("Your reservation was not found."),
                     $("#stats").hide();
