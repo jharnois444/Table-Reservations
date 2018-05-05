@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <title>Junction Restaurant </title>
+    </head>
+<body>
+
+    <header class="">
+        <div class="logo">
+            <h1>Junction</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="index.html"><li><button class="navbar1" type="button"> Home </button></li></a>
+                <li><button class="navbar1" type="button"> Menu </button></li>
+                <li><button class="navbar1" type="button"> Reservation </button> </li>
+                <li><button class="navbar1" type="button"> Gallery </button> </li>
+                <li><button class="navbar1" type="button"> Team </button></li>
+                <li><button class="navbar1" type="button">Blog </button></li>
+                <li><button class="navbar1" type="button"> Contact</button> </li>
+            </ul>
+        </nav>
+        <div class="welcome">
+                <h1> Book a Table </h1>
+            </div>
+    
+            <div class="description">
+                <p>To reserve your table, please enter your information below. </p>
+            </div>
+    
+                <a href=""><button id="waitlist" class="book" type="button"> Waitlist </button></a>
+            </div>
+    </header>
+    <div class="container">
+        <div class="row">
+
+        <div class="col-lg-12">
+
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"> Book a Table</h3>
+            </div>
+            <div class="panel-body">
+                <form method="POST" role="form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" class="form-control" id="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="party">How many people?</label>
+                    <input type="number" class="form-control" id="party">
+                </div>
+
+                </form>
+                <br>
+                <div class="text-center">
+                <button type="submit" class="btn submit-btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> Submit</button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <section class="information">
+        <div class="open-hours">
+            <p>Open Hours </p>
+        </div>
+
+        <div class="hours hours-table">
+            <ul>
+                <li> Monday-Friday: 10 AM - 11PM </li>
+                <li> Saturday- Sunday: 9AM - 1PM </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="address">
+
+            <h4> Address </h4>
+            <ul>
+                <li>Junction Restaurant </li>
+                <li> 9400 International Drive, Orlando 32819 </li>
+            </ul>
+        </div>
+
+        <div class="reservation">
+            
+            <h4> Reservation </h4>
+            <ul>
+                <li> +1 (407) 800-2507</li>
+                <li>contact@junctionrestaurant.com</li>
+            </ul>
+        </div>
+
+        <div class="open">
+            <h4> Open Hours </h4>
+            <ul>
+                <li> Monday-Friday: 10 AM- 11PM </li>
+                <li> Saturday- Sunday: 9AM- 1PM </li>
+            </ul>
+        </div>
+
+    </footer>
+    <div class="copy">
+        <div class="copyright">
+            &copy; Copyright 2017, Junction Restaurants.
+        </div>
+    </div>
+
+
+  <script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newCharacter = {
+        name: $("#name").val().trim(),
+        role: $("#role").val().trim(),
+        age: $("#age").val().trim(),
+        forcePoints: $("#force-points").val().trim()
+      };
+
+      // Question: What does this code do??
+      $.post("/api/characters", newCharacter)
+        .then(function(data) {
+          console.log("add.html", data);
+          alert("Adding character...");
+        });
+    });
+  </script>
+
+</body>
+</html>
