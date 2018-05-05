@@ -1,18 +1,13 @@
 body {
-
 	font-size: 12px;
 	font-family: Georgia, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	width: 100%
-	
-	
-
 }
 
 header {
-	
 	text-align: center;
 	padding-bottom: 160px;
 	background-image:url(images/top-image.jpg);
@@ -37,9 +32,10 @@ header {
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 16px;
 	cursor: pointer;
 	font-family: impact;
+	padding-top: 20px;
 
 }
 .navbar1:hover {
@@ -60,14 +56,13 @@ header {
 
 .welcome {
 	font-family: Impact;
-	font-size: 35px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding-top: 80px;
-
-
 }
-
+.welcome h1 {
+	font-size: 42px;
+}
 
 .description {
 	letter-spacing: 2px;
@@ -286,15 +281,16 @@ section.about {
 
 footer {
 	background-color: white;
-	display: table;
 	width: 100%;
 	text-align:center;
 
-
+}
+.main-footer {
+	width: 100%;
 }
 .main-footer ul li{
-	list-style: none;
 	line-height: 20px;
+	list-style-type: none;
 }
 
 .main-footer h4 {
@@ -303,19 +299,10 @@ footer {
 	padding: 15px 0 0 50px;
 	font-size: 16px
 }
+.address, .reservation, .open{
+	float: left;
+	width: 33.3%;
 
-
-.address {
-	display: table-cell;
-
-}
-
-.reservation {
-	display: table-cell;
-}
-
-.open {
-	display: table-cell;
 }
 
 
