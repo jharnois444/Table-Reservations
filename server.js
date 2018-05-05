@@ -9,6 +9,9 @@ var path = require("path");
 var app = express();
 var PORT = 3000;
 
+app.use(express.static(path.join(__dirname, 'assets')));
+
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({
   extended: true
