@@ -1,14 +1,10 @@
 body {
-
 	font-size: 12px;
 	font-family: Georgia, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
 	width: 100%
-	
-	
-
 }
 
 header {
@@ -29,8 +25,8 @@ header {
 	font-family: 'Dancing Script';
 	font-size: 50px;
 	margin: 0;
-
 }
+
 .navbar1 {
 	background: transparent;
 	border:none;
@@ -45,17 +41,14 @@ header {
 .navbar1:hover {
 	text-decoration: underline;
 }
+
 .menu ul li {
 	display: inline;
 	font-size: 20px
 }
 
-
 .menu li {
-	
 	padding-right:25px;
-
-
 }
 
 .welcome {
@@ -64,15 +57,12 @@ header {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding-top: 80px;
-
-
 }
 
 
 .description {
 	letter-spacing: 2px;
 	word-spacing: 2px;
-
 }
 
 
@@ -102,7 +92,6 @@ section.main-content{
 	padding: 10px 90px;
 	width: 100%;
 	box-sizing: border-box;
-
 }
 
 section.main-content img{
@@ -116,39 +105,29 @@ section.main-content img{
 	font-size: 15px;
 	font-weight: 800;
 	letter-spacing: 1px;
-
-
 }
 
 .main-content p {
 	max-width: 82%;
 	letter-spacing: 2px;
 	word-spacing: 1px;
-	
 }
 
 .groceries {
-	
 	display: table-cell;
-	
 	padding-left:20px
 }
 
 .food {
-	
 	display: table-cell;
-	
-
 }
 
 .wine {
-	
 	display: table-cell;
 	padding-left: 40px
 	
 	
 }
-
 section.about {
 	display: table;
 	background-color: white;
@@ -156,17 +135,14 @@ section.about {
 	padding-left: 100px;
 	max-width: 100%;
 	padding-bottom: 20px
-	
 }
 	
 
 .about-us {
-	
 	width: 40%;
 	padding-top: 35px;
 	float: left;
 	padding-left: 30px
-
 }
 
 .about-us h1{
@@ -196,13 +172,11 @@ section.about {
 	color: grey;
 	line-height: 18px;
 	font-weight: 200;
-
 }
 
 .photo {
 	float: right;
-	padding-top: 30px
-	
+	padding-top: 30px	
 }
 
 .photo img {
@@ -220,14 +194,10 @@ section.about {
 	text-align: center;
 	float: left;
 	width: 100%;
-
-
-	
 }
 
 .information ul li {
 	list-style: none; 
-	
 }
 
 .open-hours {
@@ -240,11 +210,10 @@ section.about {
 	padding: 70px 0 10px 0px;
 	width: 20%;
 	margin:0 auto;
-	
 }
+
 .open-hours p{
-	margin: 0 auto;
-	
+	margin: 0 auto;	
 }
 
 
@@ -261,6 +230,7 @@ section.about {
 	letter-spacing: 1px;
 	word-spacing: 2px;
 }
+
 .book-now {
 	background: transparent;
 	border: 4px solid white;
@@ -273,7 +243,6 @@ section.about {
 	letter-spacing: 4px;
 	cursor: pointer;
 	font-family: Impact;
-
 }
 
 .book-now:hover {
@@ -289,9 +258,8 @@ footer {
 	display: table;
 	width: 100%;
 	text-align:center;
-
-
 }
+
 .main-footer ul li{
 	list-style: none;
 	line-height: 20px;
@@ -307,7 +275,6 @@ footer {
 
 .address {
 	display: table-cell;
-
 }
 
 .reservation {
