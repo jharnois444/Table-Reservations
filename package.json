@@ -1,0 +1,24 @@
+{
+  "name": "table-reservations",
+  "version": "1.0.0",
+  "description": "Table reservation application using NodeJS and ExpressJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jharnois444/Table-Reservations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jharnois444/Table-Reservations/issues"
+  },
+  "homepage": "https://github.com/jharnois444/Table-Reservations#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
