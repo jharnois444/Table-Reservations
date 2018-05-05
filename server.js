@@ -18,22 +18,25 @@ app.use(bodyParser.json());
 // Reservation Table DATA
 // =============================================================
 var tableReservations = [{
-    "customerName": "Giovanna",
-    "phoneNumber": "(407) 800-4897",
-    "customerEmail": "giovanna.perina@hotmail.com",
-    "customerID": "1"
+    customerName: "Giovanna",
+    name: "Giovanna",
+    phone: "(407) 800-4897",
+    email: "giovanna.perina@hotmail.com",
+    resID: "1"
   },
   {
-    "customerName": "Joshua",
-    "phoneNumber": "(302) 382-5155",
-    "customerEmail": "bestBall@meat.meaty",
-    "customerID": "jharnois444@gmail.com"
+    customerName: "Joshua",
+    name: "Joshua",
+    phoneNumber: "(302) 382-5155",
+    Email: "jharnois444@gmail.com",
+    resID: "2"
   },
   {
-    "customerName": "Reinaldo",
-    "phoneNumber": "(407) 577-7607",
-    "customerEmail": "bestBall@meat.meaty",
-    "customerID": "llanoreinaldo@gmail.com"
+    customerName: "Reinaldo",
+    name:  "Reinaldo",
+    phone: "(407) 577-7607",
+    email: "llanoreinaldo@gmail.com",
+    resID: "3"
   }
 ];
 
@@ -61,7 +64,7 @@ app.get("/api/tables/:tables", function(req, res) {
   console.log(chosen);
 
   for (var i = 0; i < tableReservations.length; i++) {
-      if (chosen === tableReservations[i].routeName) {
+      if (chosen === tableReservations[i].customerName) {
           return res.json(tableReservations[i]);
       }
   }
