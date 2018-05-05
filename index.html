@@ -8,18 +8,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 		<link rel="stylesheet" href="main.css" type="text/css">
 		<title>Junction Restaurant </title>
-	
-
 	</head>
 
-	<header>
+	<header class="col-sm-12">
 		<div class="logo">
 			<h1>Junction</h1>
 		</div>
-
 		<nav class="menu">
 			<ul>
 				<li><button class="navbar1" type="button"> Home </button></li>
@@ -40,45 +36,46 @@
 			<p> Discover and experience fine selection of international tastes </p>
 		</div>
 
-			<button id="bookTable" class="book" type="button"> Book a Table </button>
+			<a href="tables.html"><button id="bookTable" class="book" type="button"> Book a Table </button></a>
 		</div>
 
 	</header>
 
 	<section class="main-content">
-		<div class="groceries">
-			<img src="images/groceries.png">
-			<h4> Fresh food </h4>
-			<p> Donec lacinia magna sit amet arcu aliquet luctus maecenas vehicula. </p>
-		</div>
+		<div class="row">
+			<div class="groceries col-md-4">
+				<img src="images/groceries.png">
+				<h4> Fresh food </h4>
+				<p> Donec lacinia magna sit amet arcu aliquet luctus maecenas vehicula. </p>
+			</div>
 
-		<div class="food">
-			<img src="images/food.png">
-			<h4> Chef's Specials </h4>
-			<p> Donec lacinia magna sit amet arcu aliquet luctus maecenas vehicula. </p>
-		</div>
+			<div class="food col-md-4">
+				<img src="images/food.png">
+				<h4> Chef's Specials </h4>
+				<p> Donec lacinia magna sit amet arcu aliquet luctus maecenas vehicula. </p>
+			</div>
 
-		<div class="wine">
-			<img src="images/glass.png">
-			<h4> Good Wine </h4>
-			<p> Donec lacinia magna sit amet arcu aliquet luctus maecenas vehicula. </p>
+			<div class="wine col-md-4">
+				<img src="images/glass.png">
+				<h4> Good Wine </h4>
+				<p> Donec lacinia magna sit amet arcu aliquet luctus maecenas vehicula. </p>
+			</div>
 		</div>
 	</section>
 
 	<section class="about">
-		<div class="about-us">
+		<div class="row">
+			<div class="about-us">
+				<h1> About us </h1>
+				<h2> Welcome to Junction Restaurant! </h2>
+				<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis, enim eget convallis suscipit, justo enim lacinia turpis, eget faucibus elit felis in ipsum. </h3>
+				<h3> cras ultrices pharetra sapien ac ultrices. Morbi felis justo, sollicitudin quis porttitor sit amet, fermentum et urna. Mauris consequat nec sapien vitae mollis. </h3>
+			</div>
 
-			<h1> About us </h1>
-			<h2> Welcome to  Restaurant! </h2>
-			<h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis, enim eget convallis suscipit, justo enim lacinia turpis, eget faucibus elit felis in ipsum. </h3>
-			<h3> cras ultrices pharetra sapien ac ultrices. Morbi felis justo, sollicitudin quis porttitor sit amet, fermentum et urna. Mauris consequat nec sapien vitae mollis. </h3>
+			<div class="photo">
+				<img src="images/about-us.jpg">
+			</div>
 		</div>
-
-		<div class="photo">
-			<img src="images/about-us.jpg">
-		</div>
-
-
 	</section>
 
 	<section class="information">
@@ -94,7 +91,7 @@
 		</div>
 
 		<div class="book2">
-			<button id="bookTable" class="book-now"> Book Now </button>
+			<a href="tables.html"><button id="bookTable" class="book-now"> Book Now </button></a>
 		</div>
 	</section>
 
@@ -136,6 +133,6 @@
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-<script src="assets/javascript/app.js"></script>
+<script src="app.js"></script>
 </html>
 
